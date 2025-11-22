@@ -1,0 +1,26 @@
+<h1 class="espacio">DISTANCIA ENTRE 2 PUNTOS</h1>
+<!-- Valores -->
+ <div class="contenido">
+    <div class="espacio elementoCont">
+        <form [formGroup]="formulario">
+            <div class="conV">
+                <label class="espacio" for="nx1">X1 = </label>
+                    <input type="number" id="nx1" name="nx1" formControlName="nx1"><br>
+                <label class="espacio" for="ny1">Y1 = </label>
+                    <input type="number" id="ny1" name="ny1" formControlName="ny1"><br>
+            </div>
+            <div class="conV">
+                <label class="espacio" for="nx2">X2 = </label>
+                    <input type="number" id="nx2" name="nx2" formControlName="nx2"><br>
+                <label class="espacio" for="ny2">Y2 = </label>
+                    <input type="number" id="ny2" name="ny2" formControlName="ny2"><br>
+            </div>
+<!-- Botones -->
+        </form>
+        <button class="espacio" id="bc" (click)="calcular()" accesskey="1">CALCULAR</button>
+        <button class="espacio" id="bb" (click)="borrar()" accesskey="2">BORRAR</button>
+<!-- Resultado -->
+        <p class="espacio">La distancia entre los dos puntos es: <br>{{resFinal || "- - -"}}</p>
+    </div>
+<!-- Ecuacion -->
+</div>

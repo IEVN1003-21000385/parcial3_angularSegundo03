@@ -1,0 +1,39 @@
+  <h1 class="espacio" id="titulo">ZODIACO CHINO</h1>
+  <div id="caja">
+  <form class="espacio" [formGroup]="formulario">
+  <!-- Datos personales -->
+      <div class="conV">
+    <br><p>Datos Personales:</p>
+          <label class="espacio" for="nombre">Nombre </label>
+              <input type="text" id="nombre" name="nombre" formControlName="nombre" placeholder="Nombre"><br>
+          <label class="espacio" for="aPaterno">A. Paterno </label>
+              <input type="text" id="aPaterno" name="aPaterno" formControlName="aPaterno" placeholder="Apellido Paterno"><br>
+          <label class="espacio" for="aMaterno">A. Materno </label>
+              <input type="text" id="aMaterno" name="aMaterno" formControlName="aMaterno" placeholder="Apellido Materno"><br>
+      </div>
+      <div class="conV">
+      <br><p>Fecha de nacimiento</p>
+          <label class="espacio" for="dia">Dia</label>
+            <input type="number" id="dia" name="dia" formControlName="dia" min="1" max="31"><br>
+          <label class="espacio" for="mes">Mes</label>
+            <input type="number" id="mes" name="mes" formControlName="mes" min="1" max="12"><br>
+          <label class="espacio" for="ano">Año</label>
+            <input type="number" id="ano" name="ano" formControlName="ano" min="1999"><br>
+      </div>
+      <div>
+        <br><p>Sexo</p>
+        <label class="espacio" for="sex"><input type="radio" id="sex" name="sex" formControlName="sex" value="">Masculino</label>
+        <label class="espacio" for="sex"><input type="radio" id="sex" name="sex" formControlName="sex">Femenino</label>
+      </div>
+  <!-- Botones -->
+   <button class="espacio" id="imp" (click)="imprimir()" accesskey="1">IMPRIMIR</button>
+   <button class="espacio" id="bor" (click)="borrar()" accesskey="2">BORRAR</button>
+  </form>
+  <!-- Resultado -->
+  <div class="espacio" id="resultados">
+    <h3>{{resnombre}}</h3>
+    <h3>{{resEdad}}</h3>
+    <h3>{{resSimbolo}}</h3>
+    <img class="espacio" [src]="imgz" [alt]="imgz">
+  </div>
+</div>

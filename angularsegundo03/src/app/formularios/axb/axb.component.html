@@ -1,0 +1,17 @@
+<h1 class="espacio">CALCULADORA DE MULTIPLICACIÓN</h1>
+<div>
+  <form [formGroup]="formulario">
+    <label class="espacio" for="valorA">Valor A:</label>
+    <input type="number" id="valorA" placeholder="Ingresa el valor de A" formControlName="valorA">
+
+    <br>
+    <label class="espacio" for="valorB">Valor B:</label>
+    <input type="number" id="valorB" placeholder="Ingresa el valor de B" formControlName="valorB">
+
+    <br>
+    <button class="espacio" id="btnMult" (click)="multValores()" type="button" accesskey="1">MULTIPLICAR</button>
+    <button class="espacio" id="btnBorr" (click)="borrar()" type="button" accesskey="1">BORRAR</button>
+
+    <h3 class="espacio">Resultado: {{ resultado || "- - -"}}</h3>
+  </form>
+</div>

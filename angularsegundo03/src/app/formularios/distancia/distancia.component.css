@@ -1,0 +1,41 @@
+button{
+    border-radius: 25px;
+    width: 130px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+input{
+    width: 80px;
+}
+form{
+    display: flex;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+/* Clases */
+.contenido{
+    display: flex;
+    flex-direction: row;
+}
+.elementoCont{
+    border: solid 2px black;
+    border-radius: 15px;
+    background-color: rgb(192, 235, 235);
+    box-shadow: 14px 14px 20px 0 rgb(228, 228, 228);
+}
+.espacio{
+    margin: 10px;
+    padding: 5px;
+}
+/* Ids */
+#bc{
+    background: linear-gradient(to bottom right, chartreuse, darkgreen);
+}
+#bb{
+    background: linear-gradient(to bottom right, red, darkred);
+}
